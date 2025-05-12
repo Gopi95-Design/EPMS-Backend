@@ -24,6 +24,4 @@ let RegisterSchema = new Schema({
     collection: 'Registers'
   })
 
-
-
 module.exports = mongoose.model('Register', RegisterSchema)

@@ -1,10 +1,8 @@
-let mongoose = require("mongoose"),
+let mongoose = require ("mongoose"),
   express = require("express"),
   router = express.Router();
 
-let RegisterSchema = require("../Model/Register");
-
-
+let RegisterSchema = require("../Model/Register")
 router.route("/get-employee/:id").get(async (req, res, next) => {
   await RegisterSchema
     .findById(req.params.id)
